@@ -1,0 +1,127 @@
+//common start
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+a{
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s;
+    li{
+        margin: 0;
+    }
+}
+
+ul{
+    padding: auto;
+    li{
+        margin-top: 0;
+    }
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+//common end
+
+//header start
+
+.header{
+    .header__inner{
+        .header__menu{
+            nav{
+                display: flex;
+                align-items: center;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .header__menu__li + .header__menu__li{
+                        margin-left: 15px;
+                    }
+                    img{
+                        width: 150px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+        .header__menu-right-content{
+            margin-left: 150px;
+            
+        }
+        .header__btn-call{
+            margin-left: 10px;
+            // display: inline;
+            // border-bottom: 1px dashed #000
+        }
+        // .header__btn-write::before{
+        //     content: '';
+        //     background-image: url(../img/phone.png);
+            
+        // }
+        .header__btn{
+            display: block;
+            margin-bottom: 15px;
+        }
+        .header__btn-down{
+            display: inline;
+            border-bottom: 1px dashed #000;
+            transition: all .3s;
+            
+        }
+        .btn__tel{
+            position: relative; 
+        }
+        .btn__mail{
+            position: relative;
+        }
+    }
+    a:hover{
+        color: #f1592a;
+    }
+    .header__btn-down:hover{
+        border-bottom: 1px dashed #f1592a;
+    }
+    .btn__tel:before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: -30px;
+        background-image: url(../img/phone.png);
+        background-repeat: no-repeat;
+    }
+    .btn__mail:before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: -30px;
+        background-image: url(../img/mail.png);
+        background-repeat: no-repeat;
+    }
+}
+
+//header end
