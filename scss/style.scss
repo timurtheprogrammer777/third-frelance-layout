@@ -142,8 +142,62 @@ li{
 //header__slider start
 
 .header__slider {
+    position: relative;
+    .slick-arrow{
+        background-color: rgba(0, 0, 0, .0);
+        transition: all .3s;
+        cursor: pointer;
+    }
+    .slick-arrow:hover{
+        transform: scale(1.1 ,1.1);
+    }
     .slick-prev{
-        background-color: red;
+        // background-color: none;
+        border: none;
+        font-size: 0;
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        width: 50px;
+        height: 70px;
+        background-image: url(../img/back-2.png);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-color: none;
+    }
+    .slick-next{
+        border: none;
+        font-size: 0;
+        position: absolute;
+        top: 50%;
+        right: -10%;
+        width: 50px;
+        height: 70px;
+        background-image: url(../img/forward.png);
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-color: none;    
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        font-size: 0;
+        padding-bottom: 10px;
+        button{
+            background-color: #e3eaf0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            border: none; 
+            cursor: pointer; 
+            transition: all .3s;
+        }
+        button:hover{
+            background-color: #a68282;
+        }
+        li + li{
+            margin-left: 20px;
+        }
     }
     background-image: url(../img/Кривые\ 1.jpg);
     background-position: center center;
@@ -163,6 +217,7 @@ li{
         }
     }
     .item-btn{
+        margin-left: 12px;
         button{
         padding: 25px 50px;  
         }
@@ -178,6 +233,8 @@ li{
         background-color: rgba(0, 0, 0, .5);
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        text-align: center;
     }
     .item-info-item{
         display: flex;
@@ -185,6 +242,9 @@ li{
         padding: 10px;
         align-items: center;
         text-align: center;
+        img{
+            height: 45px;
+        }
         .item-info-item-discr{
             color: #fff;
             padding-top: 10px;
@@ -200,17 +260,20 @@ li{
         img{
             margin-right: 10px;
             position: relative;
-        }
-        img:before{
-            content: '';
-            width: 20px;
-            height: 20px;
             background-color: #fff;
+            padding: 7px 15px;
             border-radius: 50%;
-            top: 10;
-            left: 10;
-            position: absolute;
         }
+        // img:before{
+        //     content: '';
+        //     width: 20px;
+        //     height: 20px;
+        //     background-color: #fff;
+        //     border-radius: 50%;
+        //     top: 10;
+        //     left: 10;
+        //     position: absolute;
+        // }
     }
 }
 .header__slider-inner-content-item {
