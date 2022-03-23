@@ -41,6 +41,23 @@ li{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.main-btn{
+    button{
+    color: #fff;
+    font-size: 18px;
+    background-color: #f1592a;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    }
+    button:hover{
+        background-color: #e14444;
+        transform: scale(1.1 , 1.1);
+    }
+    
+}
 //common end
 
 //header start
@@ -125,3 +142,105 @@ li{
 }
 
 //header end
+
+
+//header__slider start
+
+.header__slider {
+    background-image: url(../img/Кривые\ 1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    .item-title{
+        padding-top: 120px;
+        padding-bottom: 50px;
+        font-size: 40px;
+        color: #fff;
+        text-align: left;
+        line-height: 60px;
+        span{
+            background-color: #84d000;
+            padding: 5px;
+        }
+    }
+    .item-btn{
+        button{
+        padding: 25px 50px;  
+        }
+        
+    }
+    .item-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // margin-bottom: 50px;
+    }
+    .item-info{
+        background-color: rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: space-between;
+    }
+    .item-info-item{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        img{
+            // margin-bottom: 20px;
+        }
+        .item-info-item-discr{
+            color: #fff;
+            padding-top: 10px;
+            
+            
+        }
+    }
+    .item-subtitle{
+        color: #fff;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        img{
+            // background-color: #fff;
+            // padding: 20px;
+            // border-radius: 50px;
+            margin-right: 10px;
+            position: relative;
+        }
+        img:before{
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 10;
+            left: 10;
+            position: absolute;
+        }
+    }
+
+}
+
+.header__slider-inner-content-item {
+    margin: 50px 0;
+}
+.item-title {
+}
+.item-content {
+}
+.item-btn {
+}
+.item-info {
+}
+.item-info-item {
+}
+.item-info-item-discr {
+}
+.item-subtitle {
+}
+.item-subtitle-text {
+}
+
+//header__slider end
