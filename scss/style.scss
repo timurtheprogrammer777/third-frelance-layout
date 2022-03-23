@@ -143,6 +143,7 @@ li{
 
 .header__slider {
     position: relative;
+    margin-bottom: 50px;
     .slick-arrow{
         background-color: rgba(0, 0, 0, .0);
         transition: all .3s;
@@ -279,22 +280,89 @@ li{
 .header__slider-inner-content-item {
     margin: 50px 0;
 }
-// .item-title {
-// }
-// .item-content {
-// }
-// .item-btn {
-// }
-// .item-info {
-// }
-// .item-info-item {
-// }
-// .item-info-item-discr {
-// }
-// .item-subtitle {
-// }
-// .item-subtitle-text {
-// }
 
 //header__slider end
 
+
+//form start
+
+.form {
+    &__inner{
+        border-radius: 5px;
+        background-color: #252525;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        height: 80px;
+        .form-input{
+        border-radius: 5px;
+        background-color: #373737;
+        display: flex;
+        justify-content: space-between;
+        form{
+            padding: 9px 40px 8px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input{
+                padding: 20px 50px 20px 15px;
+                border-radius: 10px;
+                outline: none;
+            }
+        }
+        }   
+    }
+    &__first-btn{
+        button{
+            padding: 20px 45px;
+        }
+    }
+    .form__inner-item{
+        position: relative;
+        margin-left: 10px;
+    }
+    .form__inner-item::before{
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 10px;
+        background-image: url(../img/pe.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 20%;
+        left: 130%;
+    }
+    .form__second-btn{
+        margin-left: 20px;
+        button{
+            color: #fff;
+            font-size: 18px;
+            background-color: #373737;
+            border-radius: 50px;
+            padding: 20px 45px;
+            border: 1px solid #f1592a;
+            cursor: pointer;
+            transition: all .3s; 
+        }
+        button:hover{
+            background-color: #e14444;
+            transform: scale(1.1 , 1.1);
+        }
+    }
+
+    
+}
+
+.form__inner {
+}
+.form__inner-item {
+}
+.form__first-btn {
+}
+.form__input {
+}
+.form__second-btn {
+}
+
+//form end
