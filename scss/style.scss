@@ -58,6 +58,8 @@ li{
     }
     
 }
+
+
 //common end
 
 //header start
@@ -88,14 +90,7 @@ li{
         }
         .header__btn-call{
             margin-left: 10px;
-            // display: inline;
-            // border-bottom: 1px dashed #000
         }
-        // .header__btn-write::before{
-        //     content: '';
-        //     background-image: url(../img/phone.png);
-            
-        // }
         .header__btn{
             display: block;
             margin-bottom: 15px;
@@ -147,6 +142,9 @@ li{
 //header__slider start
 
 .header__slider {
+    .slick-prev{
+        background-color: red;
+    }
     background-image: url(../img/Кривые\ 1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -187,9 +185,6 @@ li{
         padding: 10px;
         align-items: center;
         text-align: center;
-        img{
-            // margin-bottom: 20px;
-        }
         .item-info-item-discr{
             color: #fff;
             padding-top: 10px;
@@ -203,9 +198,6 @@ li{
         display: flex;
         align-items: center;
         img{
-            // background-color: #fff;
-            // padding: 20px;
-            // border-radius: 50px;
             margin-right: 10px;
             position: relative;
         }
@@ -220,27 +212,26 @@ li{
             position: absolute;
         }
     }
-
 }
-
 .header__slider-inner-content-item {
     margin: 50px 0;
 }
-.item-title {
-}
-.item-content {
-}
-.item-btn {
-}
-.item-info {
-}
-.item-info-item {
-}
-.item-info-item-discr {
-}
-.item-subtitle {
-}
-.item-subtitle-text {
-}
+// .item-title {
+// }
+// .item-content {
+// }
+// .item-btn {
+// }
+// .item-info {
+// }
+// .item-info-item {
+// }
+// .item-info-item-discr {
+// }
+// .item-subtitle {
+// }
+// .item-subtitle-text {
+// }
 
 //header__slider end
+
