@@ -353,7 +353,31 @@ li{
 //tours start
 
 .tours {
-    background-color: green;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        top: 6%;
+        bottom: 33%;
+        width: 1000px;
+        background-color: #ededed;
+        height: 467px;
+        width: 100%;
+        z-index: -1;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        top: 50%;
+        bottom: 50%;
+        width: 1000px;
+        background-color: #ededed;  
+        height: 467px;
+        width: 100%;
+        z-index: -2;
+    }
+    
+
     &__inner{
         display: flex;
         flex-direction: column;
@@ -380,13 +404,23 @@ li{
                 margin-left: 250px;
             }
         }
-        &-content{
-            background-color: #fff;
+        &-content{       
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: -5px;
             .tours__item-container{
                 margin-left: 20px;
             }
             &-item{
+                box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.08);
                 text-align: left;
+                background-color: #fff;
+                margin-bottom: 30px;
+                transition: all .3s;
+                &:hover{
+                    box-shadow: 0px 33px 35px 0px rgba(0, 0, 0, 0.31);
+                }
                 span{
                     color: #828282;
                     margin-right: 15px;
@@ -431,6 +465,18 @@ li{
                 }
             }
         }
+        .tours__inner-btns-down{
+            display: flex;
+            .tour__btn-down + .tour__btn-down{
+                margin-left: 30px;
+            }
+            .tour__btn-down{
+                button{
+                    padding: 30px 25px;
+                    border-radius: 50px;
+                }
+            }
+        }
     }
 }
 
@@ -458,3 +504,71 @@ li{
 }
 
 //tours end
+
+// .Группа_15 {
+//     position: absolute;
+//     left: 0px;
+//     top: 0px;
+//     width: 1920px;
+//     height: 7583px;
+//     z-index: 141;
+//   }
+//   .Слой_4 {
+//     background-image: url("Слой 4.png");
+//     position: absolute;
+//     left: 360px;
+//     top: 992px;
+//     width: 409px;
+//     height: 273px;
+//     z-index: 140;
+//   }
+//   .Прямоугольник_5 {
+//     background-color: rgb(255, 255, 255);
+//     box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.08);
+//     position: absolute;
+//     left: 374px;
+//     top: 1027px;
+//     width: 370px;
+//     height: 540px;
+//     z-index: 139;
+//   }
+//   }
+//   }
+  
+//   }.Группа_15 {
+//   position: absolute;
+//   left: 0px;
+//   top: 0px;
+//   width: 1920px;
+//   height: 7583px;
+//   z-index: 181;
+// }
+// .Слой_4 {
+//   background-image: url("Слой 4.png");
+//   position: absolute;
+//   left: 760px;
+//   top: 992px;
+//   width: 409px;
+//   height: 273px;
+//   z-index: 179;
+// }
+// .Прямоугольник_5_копия {
+//   background-color: rgb(255, 255, 255);
+//   box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.08);
+//   position: absolute;
+//   left: 774px;
+//   top: 1027px;
+//   width: 370px;
+//   height: 540px;
+//   z-index: 178;
+// }
+// .при_наведении {
+//   background-color: rgb(255, 255, 255);
+//   box-shadow: 0px 33px 35px 0px rgba(0, 0, 0, 0.31);
+//   position: absolute;
+//   left: 795px;
+//   top: 1128px;
+//   width: 329px;
+//   height: 427px;
+//   z-index: 177;
+// }
