@@ -1,3 +1,7 @@
+// @mixin main-btn {
+    
+// }
+
 //common start
 html{
     box-sizing: border-box;
@@ -265,16 +269,6 @@ li{
             padding: 7px 15px;
             border-radius: 50%;
         }
-        // img:before{
-        //     content: '';
-        //     width: 20px;
-        //     height: 20px;
-        //     background-color: #fff;
-        //     border-radius: 50%;
-        //     top: 10;
-        //     left: 10;
-        //     position: absolute;
-        // }
     }
 }
 .header__slider-inner-content-item {
@@ -283,10 +277,10 @@ li{
 
 //header__slider end
 
-
 //form start
 
 .form {
+    margin-bottom: 100px;
     &__inner{
         border-radius: 5px;
         background-color: #252525;
@@ -354,15 +348,113 @@ li{
     
 }
 
-.form__inner {
-}
-.form__inner-item {
-}
-.form__first-btn {
-}
-.form__input {
-}
-.form__second-btn {
+//form end
+
+//tours start
+
+.tours {
+    background-color: green;
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &-btns-up{
+            display: flex;
+            margin-bottom: 50px;
+            .tour__btn-up{
+                button{
+                    font-size: 30px;
+                    border: none;
+                    background: none;
+                    cursor: pointer;
+                    transition: all .3s;
+                    border-bottom: 1px solid #fff;
+                    &:hover{
+                        color: #f1592a;
+                        border-bottom: 1px solid #f1592a;
+                    }
+                }
+            }
+            .tour__btn-up + .tour__btn-up{
+                margin-left: 250px;
+            }
+        }
+        &-content{
+            background-color: #fff;
+            .tours__item-container{
+                margin-left: 20px;
+            }
+            &-item{
+                text-align: left;
+                span{
+                    color: #828282;
+                    margin-right: 15px;
+                }
+                .tours__item-img{
+                    margin-bottom: 40px;
+                }
+                .tours__item-title{
+                    font-size: 19px;
+                    margin-bottom: 35px;
+                }
+                .tours__item-date{
+                    margin-bottom: 20px;
+                }
+                .tours__item-difficulty{
+                    margin-bottom: 20px;
+                }
+                .tours__item-price{
+                    margin-bottom: 40px;
+                }
+                .tours__item-btns{
+                    margin-bottom: 50px;
+                    button{
+                        padding: 15px 25px;
+                        transform: scale( 1, 1);
+                        transition: all .9s;
+                    }
+                    button + button{
+                        margin-left: 5px;
+                    }
+                    .tours__item-btn{
+                        background-color: #fff;
+                        color: #f1592a;
+                        border: 1px solid #f1592a;
+                        &:hover{
+                            color: #fff;
+                            border: 1px solid #e14444;
+                            background-color: #e14444;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-//form end
+.tours__inner {
+}
+.tours__inner-btns-up {
+}
+.tour__btn-up {
+}
+.tours__inner-content {
+}
+.tours__inner-content-item {
+}
+.tours__item-img {
+}
+.tours__item-title {
+}
+
+
+
+
+.tours__inner-btns-down {
+}
+.tour__btn-down {
+}
+
+//tours end
