@@ -649,37 +649,56 @@ $color-red: #f1592a;
     }
 }
 
-
-
-.tourclub-active-life {
-}
-.active-life-btn {
-}
-.active-life-title {
-}
-.active-life-subtitle {
-}
-.active-life-quote-1 {
-}
-.active-life-quote-2 {
-}
-.tourclub-vid {
-}
-.tourclub-vid-title {
-}
-.tourclub-vid-yt {
-}
-.tourclub-stat {
-}
-.tourclub-stat-text {
-}
-.tourclub-partner {
-}
-.tourclub-partner-title {
-}
-.tourclub-partner-btn {
-}
-.tourclub-partner-img {
-}
-
 //tourclub end
+
+//includes start
+
+.includes {
+    margin-bottom: 120px;
+    .includes__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .includes__inner-title{
+            @include main-title;
+
+            margin-bottom: 50px;
+        }
+        .includes__inner-content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 95%;
+            margin-bottom: 35px;
+            .includes__inner-item{
+                line-height: 20px;
+                font-size: 15px;
+                width: 33%;
+                text-align: center;
+                margin-top: 30px;
+                span{
+                    font-weight: 700;
+                }
+            }
+            .includes__inner-item-text{
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+        .includes__inner-btns{
+            display: flex;
+            button + button{
+                margin-left: 20px;
+            }
+            button{
+                padding: 30px 70px;
+                border-radius: 45px;
+            }
+        }
+    }
+}
+
+
+
+
+//includes end
