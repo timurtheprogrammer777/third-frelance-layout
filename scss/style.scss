@@ -1,6 +1,17 @@
-// @mixin main-btn {
-    
-// }
+@mixin main-title {
+    font-family: 'Russo one';
+    font-size: 33px;
+    font-weight: 400;
+    span{
+        color: $color-red;
+    }
+}
+
+//fonts start
+
+
+
+//fonts end
 
 //common start
 html{
@@ -40,6 +51,7 @@ ul{
 li{
     list-style: none;
 }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -63,7 +75,25 @@ li{
     
 }
 
+.main-btn-unactive{
+    button{
+    color: #f1592a;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #f1592a;
+    cursor: pointer;
+    transition: all .3s;
+    }
+    button:hover{
+        color: #fff;
+        background-color: #e14444;
+        transform: scale(1.1 , 1.1);
+    }
+    
+}
 
+$color-red: #f1592a;
 //common end
 
 //header start
@@ -107,6 +137,7 @@ li{
         }
         .btn__tel{
             position: relative; 
+            font-family: 'Russo One';
         }
         .btn__mail{
             position: relative;
@@ -272,6 +303,7 @@ li{
     }
 }
 .header__slider-inner-content-item {
+    font-family: 'Russo One';
     margin: 50px 0;
 }
 
@@ -353,6 +385,7 @@ li{
 //tours start
 
 .tours {
+    margin-bottom: 60px;
     position: relative;
     &::after{
         position: absolute;
@@ -387,6 +420,7 @@ li{
             display: flex;
             margin-bottom: 50px;
             .tour__btn-up{
+                font-family: 'Russo One';
                 button{
                     font-size: 30px;
                     border: none;
@@ -429,6 +463,7 @@ li{
                     margin-bottom: 40px;
                 }
                 .tours__item-title{
+                    font-family: 'Russo One';
                     font-size: 19px;
                     margin-bottom: 35px;
                 }
@@ -486,6 +521,165 @@ li{
 
 //tourclub start
 
+.tourclub {
+    margin-bottom: 100px;
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        &-item{
+            width: 50%;
+        }
+        .tourclub-active-life{
+            position: relative;
+            margin-top: 75px;
+            .active-life-btn{
+                position: absolute;
+                right: 50px;
+                top: -10px;
+                button{
+                padding: 20px 35px;   
+                }
+                
+            }
+            .active-life-title{
+                margin-bottom: 25px;
+                font-size: 33px;
+                font-family: 'Russo One';
+                span{
+                    color: #f1592a;
+                }
+            }
+            .active-life-subtitle{
+                color: #939393;
+                margin-bottom: 40px;
+                width: 65%;
+                line-height: 20px;
+            }
+            .active-life-quote-1{
+                width: 45%;
+                line-height: 20px;
+                font-weight: 600;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 200px;
+                    height: 200px;
+                    top: -30px;
+                    left: 140%;
+                    background-image: url(../img/quote.jpg);
+                    background-repeat: no-repeat;
+                }
+            }
+            .active-life-quote-2{
+                width: 50%;
+                text-align: end;
+                font-weight: 600;
+            }
+        }
+        .tourclub-vid{
+            margin-bottom: -2px;
+            .tourclub-vid-title{
+                margin-bottom: 20px;
+                font-size: 18px;
+                font-weight: 800;
+                span{
+                    color:$color-red ;
+                    
+                }
+            }
+        }
+        .tourclub-stat{
+            background-color: #252525;
+            .tourclub-stat-text{
+                font-size: 18px;
+                font-family: 'Russo one';
+                margin-left: 60px;
+                margin-top: 40px;
+                color: #fff;
+                display: flex;
+                text-align: left;
+                align-items: center;
+                span{
+                    color: $color-red;
+                    font-size: 60px;                 
+                    margin: 0 20px;
+                }
+                img{
+                    display: inline;
+                    width: 9%;
+                    // height: 10%;
+                }
+            }
+        }
+        .tourclub-partner{
+            font-family: 'Russo one';
+            font-size: 23px;
+            text-align: center;
+            
+            .tourclub-partner-title{
+                margin-top: 100px;
+                span{
+                    color: $color-red;
+                }            
+            }
+            .tourclub-partner-btn{
+                display: inline;
+                button{
+                    padding: 35px 80px; 
+                    border-radius: 45px;   
+                }
+                
+            }
+            .tourclub-partner-img{
+                display: inline;
+            }
+            .tourclub-partner-content{
+                margin-top: 40px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                div + div{
+                    margin-left: 40px;
+                }
+            }
+            
+        }
+    }
+}
 
+
+
+.tourclub-active-life {
+}
+.active-life-btn {
+}
+.active-life-title {
+}
+.active-life-subtitle {
+}
+.active-life-quote-1 {
+}
+.active-life-quote-2 {
+}
+.tourclub-vid {
+}
+.tourclub-vid-title {
+}
+.tourclub-vid-yt {
+}
+.tourclub-stat {
+}
+.tourclub-stat-text {
+}
+.tourclub-partner {
+}
+.tourclub-partner-title {
+}
+.tourclub-partner-btn {
+}
+.tourclub-partner-img {
+}
 
 //tourclub end
