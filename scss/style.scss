@@ -698,7 +698,127 @@ $color-red: #f1592a;
     }
 }
 
-
-
-
 //includes end
+
+//team start
+
+.team{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 100px;
+        background-image: url(../img/team-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .team__inner{
+        position: relative;
+        .slick-arrow{
+            background-color: rgba(0, 0, 0, .0);
+            transition: all .3s;
+            cursor: pointer;
+        }
+        .slick-arrow:hover{
+            transform: scale(1.1 ,1.1);
+        }
+        .slick-prev{
+            // background-color: none;
+            border: none;
+            font-size: 0;
+            position: absolute;
+            top: 85%;
+            left: 37%;
+            width: 50px;
+            height: 70px;
+            background-image: url(../img/team-ar-back.png);
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-color: none;
+        }
+        .slick-next{
+            border: none;
+            font-size: 0;
+            position: absolute;
+            top: 85%;
+            right: 33%;
+            width: 50px;
+            height: 70px;
+            background-image: url(../img/team-ar-next.png);
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-color: none;    
+        }
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+            font-size: 0;
+            padding-bottom: 10px;
+            button{
+                background-color: #fff;
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                border: none; 
+                cursor: pointer; 
+                transition: all .3s;
+            }
+            button:hover{
+                background-color: $color-red;
+            }
+            li + li{
+                margin-left: 20px;
+            }
+        }
+        .team__inner-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+            margin-left: auto;
+            margin-bottom: 100px;
+            .team__inner-title-main{
+                @include main-title;
+            }
+            .team__inner-title-btns{  
+                a{
+                    border-bottom: 1px dashed #000;
+                    color: #000;
+                }             
+                a:hover{
+                    border-bottom: 1px dashed $color-red;
+                    color: $color-red;
+                }
+                a + a{
+                    margin-left: 15px;
+                }
+            }
+        }
+        .team__inner-content{
+            &-item{ 
+                display: flex !important;
+                align-items: flex-start;
+                .team__item-text{
+                    margin-left: 45px;
+                    .team__item-title{
+                        font-family: 'Russo one';
+                        font-size: 22px;
+                        margin-bottom: 30px;
+                    }
+                    .team__item-subtitle{
+                        color: #4a4a4a;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//team end
+
