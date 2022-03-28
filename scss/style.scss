@@ -69,8 +69,9 @@ li{
     transition: all .3s;
     }
     button:hover{
-        background-color: #e14444;
+        // background-color: #e14444;
         transform: scale(1.1 , 1.1);
+        box-shadow: 0px 11px 35px 0px rgba(241, 89, 42, 0.7),0px 2px 0px 0px rgba(194, 72, 34, 0.004);
     }
     
 }
@@ -87,7 +88,8 @@ li{
     }
     button:hover{
         color: #fff;
-        background-color: #e14444;
+        background-color: #f1592a;
+        box-shadow: 0px 11px 35px 0px rgba(241, 89, 42, 0.7),0px 2px 0px 0px rgba(194, 72, 34, 0.004);
         transform: scale(1.1 , 1.1);
     }
     
@@ -826,6 +828,7 @@ $color-red: #f1592a;
 //directions start
 
 .directions {
+    margin-bottom: 40px;
     .directions__inner {
         .directions__inner-title {
             @include main-title;
@@ -868,21 +871,65 @@ $color-red: #f1592a;
     }    
 }
 
-.directions__inner {
-}
-.directions__inner-title {
-}
-.directions__inner-content {
-}
-.directions__inner-content-item {
-}
-.directions__inner-content-item-t {
-}
-.directions__inner-content-item-l {
-}
-.directions__li {
-}
-.directions__links {
+//directions end
+
+//question start
+
+.question {
+    .question__inner{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        .question__inner-title{
+            font-family: "Russo one";
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .question__inner-content{
+            background-color: #252525;
+            border-radius: 100px;
+            form{
+                z-index: 5;
+                display: flex;
+                justify-content: end;
+                .question__input{
+                    position: absolute;
+                    left: 32%;
+                    margin: 65px 0;
+                    z-index: 1;
+                    input{
+                        padding: 30px 260px 30px 40px;
+                        border-radius: 50px;
+                        outline: none;
+                    }
+                }
+                .question__btn{
+                    margin: 65px 70px;
+                    position: relative;
+                    z-index: 10;
+                    button{
+                        padding: 30px 80px 30px 100px;
+                        border-radius: 50px;
+                        &:hover{
+                            transform: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-//directions end
+.question__inner {
+}
+.question__inner-title {
+}
+.question__inner-content {
+}
+.question__input {
+}
+.question__btn {
+}
+
+//question end 
+
