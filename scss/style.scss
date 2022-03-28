@@ -703,6 +703,7 @@ $color-red: #f1592a;
 //team start
 
 .team{
+    margin-bottom: 200px;
     position: relative;
     &::before{
         content: '';
@@ -822,3 +823,66 @@ $color-red: #f1592a;
 
 //team end
 
+//directions start
+
+.directions {
+    .directions__inner {
+        .directions__inner-title {
+            @include main-title;
+
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .directions__inner-content {
+            display: flex;
+            justify-content: space-between;
+            &-item{
+                &-t{
+                    font-family: 'Russo one';
+                    text-align: center;
+                    font-size: 20px;
+                    text-align: left;
+                }
+                &-l{
+                    
+                    .directions__li{
+                        margin-top: 25px;
+                        position: relative;
+                        &::before{
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        top: 2px;
+                        left: -25px;
+                        background-image: url(../img/tr.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }    
+}
+
+.directions__inner {
+}
+.directions__inner-title {
+}
+.directions__inner-content {
+}
+.directions__inner-content-item {
+}
+.directions__inner-content-item-t {
+}
+.directions__inner-content-item-l {
+}
+.directions__li {
+}
+.directions__links {
+}
+
+//directions end
