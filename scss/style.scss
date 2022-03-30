@@ -1073,35 +1073,125 @@ $color-red: #f1592a;
     }
 }
 
-.clients__inner {
-}
-.clients__inner-title {
-}
-.clients__title-main {
-}
-.clients__title-btn {
-}
-.clients__inner-content {
-}
-.clients__inner-content-item {
-}
-.clients__item-img {
-}
-.client__item-name-online {
-}
-.clients__name {
-}
-.clients__online {
-}
-.clients__item-age {
-}
-.clients__item-text {
-}
-.clients__inner-socials {
-}
-.clients__inner-socials-title {
-}
-.clients__inner-socials-links {
+//clients end
+
+//definition start
+
+.definition {
+    margin-bottom: 160px;
+    &__inner{
+        text-align: center;
+        &-title{
+            @include main-title;
+        }
+        &-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 200px;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 150%;
+                top: 0;
+                left: 13%;
+                background-image: url(../img/гора.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: -50;    
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 170%;
+                height: 100%;
+                top: -5%;
+                left: -71%;
+                background-image: url(../img/cloud-down.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: rgba(255, 255, 255, .0);
+                z-index: -1;
+            }
+            
+            &-figure{
+                font-family: 'Russo one';
+                font-size: 264px;
+                color: $color-red;
+                z-index: -100;
+            }
+            &-text{
+                font-family: 'Russo one';
+                font-size: 22px;
+                margin-left: 50px;
+                width: 30%;
+                margin-bottom: 50px;
+                z-index: 1;
+                &::after{
+                    position: absolute;
+                    content: 'Простых вопросов помогут вам подняться на вершину';
+                    width: 30%;
+                    height: 100%;
+                    top: 26%;
+                    left: 44%;
+                    z-index: 10;
+                    // background-image: url(../img/cloud-down.png);
+                    // background-repeat: no-repeat;
+                    // background-size: cover;
+                    // background-position: center;
+                    // background-color: rgba(255, 255, 255, .0);
+                    // z-index: 1;
+                    
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 102%;
+                    height: 97%;
+                    top: 93%;
+                    left: 10%;
+                    background-image: url(../img/cloud-up.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    background-color: rgba(255, 255, 255, .0);
+                    z-index: 1;
+                }
+            }
+        }
+        .definition__inner-btn{
+            padding-top: 100px;
+            margin-bottom: 30px;
+            button{
+                padding: 35px 80px;
+                border-radius: 55px;
+            }
+
+        }
+        .definition__inner-subtitle{
+            font-family: 'Russo one';
+            font-size: 20px;
+        }
+    }
 }
 
-//clients end
+.definition__inner {
+}
+.definition__inner-title {
+}
+.definition__inner-content {
+}
+.definition__inner-content-figure {
+}
+.definition__inner-content-text {
+}
+.definition__inner-btn {
+}
+.definition__inner-subtitle {
+}
+
+//definition end
