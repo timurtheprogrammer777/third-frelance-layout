@@ -876,6 +876,7 @@ $color-red: #f1592a;
 //question start
 
 .question {
+    margin-bottom: 120px;
     .question__inner{
         width: 80%;
         margin: 0 auto;
@@ -920,16 +921,187 @@ $color-red: #f1592a;
     }
 }
 
-.question__inner {
-}
-.question__inner-title {
-}
-.question__inner-content {
-}
-.question__input {
-}
-.question__btn {
-}
-
 //question end 
 
+//cleints start
+
+.clients {
+    margin-bottom: 110px;
+    &__inner{
+        position: relative;
+        .slick-arrow{
+            background-color: rgba(0, 0, 0, .0);
+            transition: all .3s;
+            cursor: pointer;
+        }
+        .slick-arrow:hover{
+            transform: scale(1.1 ,1.1);
+        }
+        .slick-prev{
+            // background-color: none;
+            border: none;
+            font-size: 0;
+            position: absolute;
+            top: 23%;
+            left: 11%;
+            width: 50px;
+            height: 70px;
+            background-image: url(../img/team-ar-back.png);
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-color: none;
+            z-index: 10;
+        }
+        .slick-next{
+            border: none;
+            font-size: 0;
+            position: absolute;
+            top: 23%;
+            right: 11%;
+            width: 50px;
+            height: 70px;
+            background-image: url(../img/team-ar-next.png);
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-color: none;    
+        }
+        .slick-dots{
+            // margin-top: 100px;
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: center;
+            font-size: 0;
+            padding-bottom: 10px;
+            button{
+                background-color: #f0f0f0;
+                width: 20px;
+                height: 20px;
+                border-radius: 50px;
+                border: none; 
+                cursor: pointer; 
+                transition: all .3s;
+            }
+            button:hover{
+                background-color: $color-red;
+            }
+            li + li{
+                margin-left: 20px;
+            }
+        }
+        &-title{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 65%;
+            margin-left: auto;
+            margin-bottom: 60px;
+            .clients__title-main {
+               @include main-title;
+
+            }
+            .clients__title-btn{
+                a{
+                    border-bottom: 1px dashed #000;
+                    color: #000;
+                }             
+                a:hover{
+                    border-bottom: 1px dashed $color-red;
+                    color: $color-red;
+                }           
+            }   
+        }
+        &-content{
+            text-align: center;
+            &-item{
+                .clients__item-img{
+                    margin-bottom: 40px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .clients__item-name-online{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 84%;
+                    margin-left: auto;
+                    margin-bottom: 15px;
+                    .clients__name{
+                        font-family: 'Russo one';
+                        font-size: 22px;
+                    }
+                    .clients__online{
+                        color: #d8d8d8;
+                        font-size: 12px;
+                        margin-left: 50px;
+                    }
+                }
+                .clients__item-age{
+                    color: $color-red;
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+                .clients__item-text{
+                    width: 100%;
+                    margin: 0 auto 40px;
+                    p{
+                        display: block;
+                    }
+                }
+            }
+        }
+        &-socials{
+            &-title{
+                font-size: 20px;
+                text-align: center;
+                font-family: 'Russo one';
+                margin-bottom: 30px;
+            }
+            &-links{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a + a{
+                    margin-left: 30px;
+                }
+                a:hover{
+                    transform: scale(1.1 , 1.1);
+                }
+            }
+        }
+    }
+}
+
+.clients__inner {
+}
+.clients__inner-title {
+}
+.clients__title-main {
+}
+.clients__title-btn {
+}
+.clients__inner-content {
+}
+.clients__inner-content-item {
+}
+.clients__item-img {
+}
+.client__item-name-online {
+}
+.clients__name {
+}
+.clients__online {
+}
+.clients__item-age {
+}
+.clients__item-text {
+}
+.clients__inner-socials {
+}
+.clients__inner-socials-title {
+}
+.clients__inner-socials-links {
+}
+
+//clients end
