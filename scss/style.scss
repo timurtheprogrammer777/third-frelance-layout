@@ -52,6 +52,12 @@ li{
     list-style: none;
 }
 
+strike{
+    color: #828282;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 20px;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -97,11 +103,16 @@ li{
     width: 30px;
     height: 50px;
     opacity: 0;
+    transition: all .3s;
+    cursor: pointer;
     .burger-line{
         background-color: black;
         width: 30px;
         height: 2px;
         margin: 5px 0;
+    }
+    &:hover{
+        transform: scale(1.1 ,1.1);
     }
 }
 $color-red: #f1592a;
@@ -259,7 +270,8 @@ $color-red: #f1592a;
     background-image: url(../img/Кривые\ 1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    width: 100%;
     height: 100%;
     .item-title{
         padding-top: 120px;
@@ -284,6 +296,7 @@ $color-red: #f1592a;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
     }
     .item-info{
         background-color: rgba(0, 0, 0, .5);
@@ -484,6 +497,7 @@ $color-red: #f1592a;
                 span{
                     color: #828282;
                     margin-right: 15px;
+                    font-weight: 700;
                 }
                 .tours__item-img{
                     margin-bottom: 40px;
@@ -495,12 +509,34 @@ $color-red: #f1592a;
                 }
                 .tours__item-date{
                     margin-bottom: 20px;
+                    font-weight: 700;
                 }
                 .tours__item-difficulty{
                     margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    p{
+                        width: 8px;
+                        height: 8px;
+                        background-color: $color-red;
+                        
+                    }
+                    p + p{
+                        margin-left: 6px;
+                    }
+                    .empty-squere{
+                        background-color: #fff;
+                        border: 1px solid #cdcdcd;
+                    }
                 }
                 .tours__item-price{
                     margin-bottom: 40px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    span{
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
                 }
                 .tours__item-btns{
                     margin-bottom: 50px;
@@ -1328,15 +1364,35 @@ $color-red: #f1592a;
 //footer end
 
 //media start
-
+@media (max-width:1450px){
+    .header__slider{
+        .slick-next{
+            top: 82%;
+            right: 3%;
+        }
+        .slick-prev{
+            top: 82%;
+            left: 3%;
+        }
+    }
+}
 @media (max-width:1050px){
     .header{
         .header__inner{
             .header__menu{
                 nav{
+                    padding: 10px;
                     ul{
                         opacity: 1;
                         display: none;
+                        margin: 0 auto;
+                        li{
+                            margin-top: 5px;
+                            font-size: 25px;
+                        }
+                    }
+                    .header__menu-right-content{
+                        margin-left: auto;
                     }
                 }
             }
@@ -1347,9 +1403,61 @@ $color-red: #f1592a;
         display: block;
     }
 }
+@media (max-width:950px){
+    .header__slider{
+        background-position: 65% 50%;
+    }
+}
+@media (max-width: 780px){
+    .header__slider{
+        background-position: 65% 50%;
+        .item-content{
+            flex-direction: column; 
+            .item-info{
+                margin: 20px 0;
+            }        
+        }
+        .item-title{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .slick-arrow{
+            display: none;
+        }
+    }
+}
 
-
-
+@media (max-width:550px){
+    .header__menu{       
+        nav{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .header-ul{
+                font-size: 25px;
+                padding: 0;
+            }
+            .header__menu-right-content{
+                margin: 20px auto 0;
+            }   
+        }
+        
+        
+    }
+    .header__slider{
+        .item-title{
+            font-size: 25px;
+            line-height: 35px;
+        }
+        .item-info{
+            display: flex;
+            flex-wrap: wrap;
+            .item-info-item{
+                flex-basis: 50%;
+            }
+        }
+    }
+}
 
 
 
