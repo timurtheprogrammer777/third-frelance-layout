@@ -349,10 +349,13 @@ $color-red: #f1592a;
 .form {
     margin-bottom: 120px;
     &__inner{
+        display: flex;
+        max-height: 80px;
+        background-color: #373737;
+        border-radius: 5px;
         
         
-        
-        // .123{
+        .form__inner-content{
         border-radius: 5px;
         background-color: #252525;
         color: #fff;    
@@ -360,23 +363,27 @@ $color-red: #f1592a;
         justify-content: space-between;  
         align-items: center;
         height: 80px;
-        // }
+        width: 54%;
+        // z-index: -1;
+        padding-right: 15px;
+        }
         .form-input{
         border-radius: 5px;
         background-color: #373737;
         display: flex;
         justify-content: space-between;
         form{
-            padding: 9px 40px 8px 10px;
+            padding: 9px 50px 8px 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-height:80px;
             input{
                 padding: 20px 50px 20px 15px;
                 border-radius: 10px;
                 outline: none;
+                }
             }
-        }
         }   
     }
     &__first-btn{
@@ -387,6 +394,9 @@ $color-red: #f1592a;
     .form__inner-item{
         position: relative;
         margin-left: 10px;
+        button{
+            font-size: 15px;
+        }
         &:hover{
            .form__drop-down{
                display: block;
@@ -440,16 +450,27 @@ $color-red: #f1592a;
         z-index: 20 ;
     }
     .form__second-btn{
-        margin-left: 20px;
+        // width: 100%;
+        // margin-right: auto;
+        margin-left: 30px;
+        // display: flex;
+        // text-align: center;
+        // align-items: center;
+
         button{
             color: #fff;
             font-size: 18px;
             background-color: #373737;
             border-radius: 50px;
-            padding: 20px 45px;
+            padding: 20px 25px;
             border: 1px solid #f1592a;
             cursor: pointer;
             transition: all .3s; 
+            // max-height: 50px;
+            // margin-bottom: 12px;
+            // margin-top: 9px;
+            // text-align: center;
+            // line-height: 32px ;
         }
         button:hover{
             background-color: #e14444;
@@ -1417,6 +1438,36 @@ $color-red: #f1592a;
         }
     }
 }
+@media (max-width: 1240px){
+    .form{
+        .form__inner{
+            .form-input{
+                .form__second-btn{
+                    button{
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1150px){
+    .form{
+        .form__inner{
+            display: block;
+            .form-input{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .form__inner-content{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
 @media (max-width:1050px){
     .header{
         .header__inner{
@@ -1445,7 +1496,7 @@ $color-red: #f1592a;
     }
     // .form{
     //     .form__inner{
-            
+    //         display: block;
     //     }
     // }
 }
@@ -1474,7 +1525,7 @@ $color-red: #f1592a;
     }
 }
 
-@media (max-width:550px){
+@media (max-width:560px){
     .header__menu{       
         nav{
             display: flex;
@@ -1501,6 +1552,49 @@ $color-red: #f1592a;
             flex-wrap: wrap;
             .item-info-item{
                 flex-basis: 50%;
+            }
+        }
+    }
+    .form{
+        margin-bottom: 250px;
+        .form__inner{
+            height: 100%;
+            .form-button{
+                width: 100%;
+            }
+            .form__drop-down{
+                width: 200px;
+                border: 1px solid #f1592a;
+                top: -6px;
+                left: -197px;
+                .form__drop-down-item{
+                    display: block;
+                    text-align: end;
+                }
+            }
+            .form__inner-content{
+                flex-direction: column;
+                height: 170px;
+                .form-button{
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .form-input{
+                form{
+                   flex-direction: column;
+                   width: 100%; 
+                   max-height: 150px;
+                }
+                
+                .form__input{
+                    margin-bottom: 10px;
+                    margin-left: 17px;
+                }
+                // .form__second-btn{
+                //     width: 100%;
+                //     display: block;
+                // }
             }
         }
     }
