@@ -1530,10 +1530,22 @@ $color-red: #f1592a;
     }
     .tours{
         .tours__inner-btns-up{
-            display: block;
+            // display: block;
+            // font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .tour__btn-up + .tour__btn-up{
+                margin-left: 15px;
+            }
+            .tour__btn-up{
+                button{
+                    font-size: 25px;
+                }
+            }
         }
         .tour__btn-up + .tour__btn-up{
-            margin-left: 0;
+            // margin-left: 0;
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -1542,7 +1554,19 @@ $color-red: #f1592a;
         // }
     }
 }
-
+@media(max-width: 650px){
+    .tours{
+        .tours__inner{
+            .tours__inner-btns-down{
+                flex-direction: column;
+                .tour__btn-down{
+                    margin-left:  0;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
 @media (max-width:560px){
     .header__menu{       
         nav{
@@ -1636,6 +1660,14 @@ $color-red: #f1592a;
                 button + button{
                     margin-left: 0;
                     margin-top: 10px;
+                }
+            }
+            .tours__inner-btns-up{
+                .tour__btn-up{
+                    // margin-bottom: 0;
+                    button{
+                        font-size: 20px;
+                    }
                 }
             }
         }
