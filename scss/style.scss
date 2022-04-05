@@ -1472,6 +1472,50 @@ $color-red: #f1592a;
             margin: 10px auto;
         }
     }
+    .tourclub{
+        .tourclub__content-item{
+            width: 50%;
+                .tourclub-vid-yt{
+                    iframe{
+                        width: 100%;
+                    }
+                }
+                .active-life-btn{
+                    position: relative;
+                    display: block;
+                    margin: 0 -76px 0 auto;
+                    // right: -30%;
+                    text-align: center;
+                    align-items: center;
+                }
+                .active-life-quote-1{
+                    &::after{
+                        top: -125%;
+                        left: 145% ;
+                    }
+                }
+ 
+                .tourclub-partner-title{
+                    font-size: 20px;
+                    padding: 0 10px;
+                }
+                .tourclub-partner-content{
+                    flex-direction: column;
+                }
+            
+        }
+        .tourclub-active-life{
+            margin-top: 14px;
+        }
+        .tourclub-stat{
+            .tourclub-stat-text{
+                font-size: 15px;
+                span{
+                    font-size: 40px;
+                }
+            }
+        }    
+    }
 }
 @media (max-width:1050px){
     .header{
@@ -1508,6 +1552,45 @@ $color-red: #f1592a;
 @media (max-width:950px){
     .header__slider{
         background-position: 65% 50%;
+    }
+    .tourclub{
+        .tourclub__content{
+            display: block;
+            .tourclub__content-item{
+                width: 80%;
+                margin: 0 auto;
+                .tourclub-stat-text{
+                    padding: 10px;
+                    font-size: 15px;
+                    margin-top: 10px;
+                    span{
+                        font-size: 30px;
+                    }
+                }
+                .active-life-subtitle{
+                    width: 100%;
+                }
+                .active-life-quote-1{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    &::after{
+                        z-index:  -1;
+                    }
+                }
+                .active-life-quote-2{
+                    margin-bottom: 20px;
+                }
+                
+            }
+            .tourclub-partner{
+                text-align: center;
+                .tourclub-partner-content{
+                    div + div{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width: 780px){
@@ -1638,6 +1721,23 @@ $color-red: #f1592a;
                 //     width: 100%;
                 //     display: block;
                 // }
+            }
+        }
+    }
+    .tourclub{
+        .tourclub-stat{
+            .tourclub-stat-text{
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                margin-left: 0 ;
+            }
+        }
+        .tourclub-partner{
+            .tourclub-partner-btn{
+                button{
+                    padding: 25px 40px;
+                }
             }
         }
     }
