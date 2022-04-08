@@ -1685,6 +1685,19 @@ $color-red: #f1592a;
             }
         }
     }
+    .clients{
+        .clients__inner{
+            .clients__inner-title{
+                flex-direction: column; 
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                .clients__title-main{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 780px){
     .header__slider{
@@ -1737,9 +1750,12 @@ $color-red: #f1592a;
                 color: #fff;
             }
             .question__inner-content{
+                margin-left: 60px;
                 form{
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
+                    text-align: center;
                     padding: 50px 0;
                     .question__btn{
                         margin: 20px 70px;
@@ -1749,8 +1765,9 @@ $color-red: #f1592a;
                     .question__input{
                         position: relative;
                         margin:  20px 0 0 0;
+                        left: 0;
                         input{
-                            padding: 30px 50px 30px 7%;
+                            padding: 30px 50px 30px 50px;
                             display: block;
                             margin-top: -14%;
                             margin-left: -80px;
@@ -1887,6 +1904,36 @@ $color-red: #f1592a;
                 button{
                     padding: 20px 50px;
                     // width: 150%;
+                }
+            }
+        }
+    }
+    .clients{
+        .slick-arrow{
+            display: none;
+        }
+
+        .clients__item-name-online{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            // margin-left: 18px;
+            margin:  10px auto;
+            .clients__name{
+                margin-bottom: 20px;
+            }
+            .clients__online{
+                margin-left: 0;
+            }
+        }
+        .clients__item-text{
+            font-size: 12px;
+        }
+        .clients__inner-socials-links{
+            a{
+                img{
+                    width: 100%;
                 }
             }
         }
