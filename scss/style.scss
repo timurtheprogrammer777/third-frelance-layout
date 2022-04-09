@@ -1214,10 +1214,10 @@ $color-red: #f1592a;
             &::before{
                 position: absolute;
                 content: '';
-                width: 100%;
+                width: 90%;
                 height: 150%;
                 top: 0;
-                left: 13%;
+                left: 4%;
                 background-image: url(../img/гора.png);
                 background-repeat: no-repeat;
                 background-position: center;
@@ -1227,10 +1227,10 @@ $color-red: #f1592a;
             &::after{
                 position: absolute;
                 content: '';
-                width: 170%;
+                width: 60%;
                 height: 100%;
                 top: -5%;
-                left: -71%;
+                left: 17%;
                 background-image: url(../img/cloud-down.png);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -1244,6 +1244,7 @@ $color-red: #f1592a;
                 font-size: 264px;
                 color: $color-red;
                 z-index: -100;
+                margin-left: -150px;
             }
             &-text{
                 font-family: 'Russo one';
@@ -1260,15 +1261,16 @@ $color-red: #f1592a;
                     top: 26%;
                     left: 44%;
                     z-index: 10;
+                    margin-left: -100px;
                     
                 }
                 &::before{
                     position: absolute;
                     content: '';
-                    width: 102%;
+                    width: 70%;
                     height: 97%;
                     top: 93%;
-                    left: 10%;
+                    left: 24%;
                     background-image: url(../img/cloud-up.png);
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -1571,6 +1573,42 @@ $color-red: #f1592a;
             margin-top: 20px;
         }
     }
+    .definition{
+        .definition__inner{
+            .definition__inner-content{
+                // margin-bottom: 0;
+                &::before{
+                    width: 80%;
+                    // height: 80%;
+                    top: 79%;
+                    left: 11%;
+                }
+                &::after{
+                    display: none;
+                }
+            }
+            .definition__inner-content-text{
+                &::before{
+                    display: none;
+                    // width: 1%;
+                }
+                &::after{
+                    font-size: 20px;
+                    width: 33%;
+                    top: 15%;
+                    margin-left: 10px;
+                }
+            }
+            .definition__inner-content-figure{
+                font-size: 160px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+            // .definition__inner-btn{
+            //     margin-top: 20px;
+            // }
+        }
+    }
 }
 @media (max-width:950px){
     .header__slider{
@@ -1698,6 +1736,9 @@ $color-red: #f1592a;
             }
         }
     }
+    // .definition{
+        
+    // }
 }
 @media (max-width: 780px){
     .header__slider{
@@ -1788,6 +1829,19 @@ $color-red: #f1592a;
                 .tour__btn-down{
                     margin-left:  0;
                     margin-top: 10px;
+                }
+            }
+        }
+    }
+    .definition{
+        .definition__inner{
+            .definition__inner-content{
+                margin-bottom: -30px;
+                &::before{
+                    display: none;
+                }
+                .definition__inner-btn{
+                    margin-top: -100px;
                 }
             }
         }
@@ -1937,6 +1991,39 @@ $color-red: #f1592a;
                 }
             }
         }
+        // .definition{
+        //     .definition__inner{
+        //         .definition__inner-content-text{
+        //             &::after{
+        //                 width: 55%;
+        //             }
+        //         }
+        //     }
+        // }
+        // .definition__inner-content-text{
+        //     &::before{
+        //         display: none;
+        //         // width: 1%;
+        //     }
+        //     &::after{
+        //         font-size: 20px;
+        //         width: 55%;
+        //         top: 15%;
+        //         margin-left: 20px;
+        //     }
+        // }
+        // .definition__inner-content-text{
+        //     &::before{
+        //         display: none;
+        //         // width: 1%;
+        //     }
+        //     &::after{
+        //         font-size: 20px;
+        //         width: 25%;
+        //         top: 15%;
+        //         margin-left: 20px;
+        //     }
+        // }
     }
     // .icludes{
     //     .includes__inner{
