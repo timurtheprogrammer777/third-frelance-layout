@@ -1609,6 +1609,51 @@ $color-red: #f1592a;
             // }
         }
     }
+    .footer{
+        .footer__inner{
+            // .footer__content-top{
+            //     .footer__content-top-item{
+            //         flex: 80%;
+            //     }
+            // }
+            .footer__content-down{
+                display: flex;
+                // flex-direction: column;
+                flex-wrap: wrap;
+                flex-basis: 33%;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                align-items: center;
+                
+                .footer__content-down-item{
+                    order: 1;
+                    margin: 25px 0;
+                    form{
+                        padding-left: 5px;
+                        button{
+                            margin-left: 1px;
+                            padding: 10px;
+                        }
+                        input{
+                            padding: 10px;
+                        }
+                    }
+                }
+                .footer__item-title-down{
+                    width: 50%;
+                    margin-top: 0;
+                }
+                .footer__office{
+                    width: 80%;
+                    margin: 20px auto;
+                }
+                // .footer__logo{
+                //     display: none;
+                // }
+            }
+        }
+    }
 }
 @media (max-width:950px){
     .header__slider{
@@ -1816,6 +1861,22 @@ $color-red: #f1592a;
                             
                         }
                     }
+                }
+            }
+        }
+    }
+    .footer{
+        .footer__inner{
+            .footer__content-top{
+                display: flex;
+                // flex-basis: 50%;
+                flex-wrap: wrap;
+                width: 100%;
+                .footer__content-top-item{
+                    flex-basis: 45%;
+                }
+                .footer__content-top-last-item{
+                    margin: 0 auto;
                 }
             }
         }
